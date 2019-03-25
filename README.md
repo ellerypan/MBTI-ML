@@ -4,6 +4,8 @@ For our machine learning final project, we decided to predict
 using a dataset we found on Kaggle. The dataset consists of posts users made on a personality forum:
 https://www.kaggle.com/datasnaek/mbti-type
 
+![personality_key](https://user-images.githubusercontent.com/40588854/54890531-042a7480-4e67-11e9-832d-567755ed2988.png)
+
 ## Methods
 We first cleaned up the data and did feature engineering, then 
 we fit different models suchas Multinomial Naive Bayes, 
