@@ -8,10 +8,10 @@ https://www.kaggle.com/datasnaek/mbti-type
 
 
 ## Methods
-We first cleaned up the text data and created NLP features, then we fit different models such as Multinomial Naive Bayes, 
+First, we cleaned up the text data and created NLP features, then fit different models such as Multinomial Naive Bayes, 
 Logistic Regression, Random Forest, XGBoost, LightGBM and LSTM. 
 
-We used metrics such as AUC, F1 score and accuracy to judge the performance of our models. We then fine tuned our models and finally, to build up our test set, we scraped tweets from celebrities like Obama and Lady Gaga, using our model to predict their MBTI.
+Metrics such as AUC, F1 score and accuracy were used to evaluate the performance of models. We then fine tuned our models and leveraged voting classifier to ensemble them. Finally, to build up our test set, we scraped tweets from celebrities like Obama and Lady Gaga, using our model to predict their MBTI types. The predictions look interesting.
 
 <img width="1275" alt="Screen Shot 2019-05-07 at 1 35 43 AM" src="https://user-images.githubusercontent.com/40588854/57285633-7a2a1a00-7068-11e9-9a0c-6af3c6e582b8.png">
 
