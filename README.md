@@ -4,17 +4,16 @@ For our machine learning final project, we decided to predict
 using a dataset we found on Kaggle. The dataset consists of posts users made on a personality forum:
 https://www.kaggle.com/datasnaek/mbti-type
 
-![personality_key](https://user-images.githubusercontent.com/40588854/54890531-042a7480-4e67-11e9-832d-567755ed2988.png)
+<img width="1158" alt="Screen Shot 2019-05-07 at 1 30 59 AM" src="https://user-images.githubusercontent.com/40588854/57285332-db9db900-7067-11e9-8696-fa9f017efd63.png">
+
 
 ## Methods
-We first cleaned up the data and did feature engineering, then 
-we fit different models suchas Multinomial Naive Bayes, 
-Logistic Regression, Random Forest and eXtreme Gradient Boosting. 
+We first cleaned up the text data and created NLP features, then we fit different models such as Multinomial Naive Bayes, 
+Logistic Regression, Random Forest, XGBoost, LightGBM and LSTM. 
 
-We used metrics such as AUC, F1 score and accuracy to 
-judge the performance of our models. We then fine tuned our models and finally 
-we used our model to predict the MBTI personality type of 
-politicians and celebrities like Obama and Lady Gaga.
+We used metrics such as AUC, F1 score and accuracy to judge the performance of our models. We then fine tuned our models and finally, to build up our test set, we scraped tweets from celebrities like Obama and Lady Gaga, using our model to predict their MBTI.
+
+<img width="1275" alt="Screen Shot 2019-05-07 at 1 35 43 AM" src="https://user-images.githubusercontent.com/40588854/57285633-7a2a1a00-7068-11e9-9a0c-6af3c6e582b8.png">
 
 ## Results
 The data was heavily imbalanced, with most people identifying as introverted (I) and Intuitive (N)
@@ -23,6 +22,9 @@ rather than extroverted (E) and Sensitive (S). Because of this, all the models w
 trouble classifying extroversion vs introversion and intuition vs sensitivity. However, when we 
 made a Voting Classifier using Logarithmic Regression, Random Forest, LightGBM, and XGBoost, we 
 were able to achieve the best AUC-ROC score and f-scores.
+
+<img width="836" alt="Screen Shot 2019-05-07 at 1 42 12 AM" src="https://user-images.githubusercontent.com/40588854/57286086-69c66f00-7069-11e9-9f96-34700c467e20.png">
+
 
 ## Team (alphabetical order)
 Ben Khuong  
